@@ -10,6 +10,7 @@
 
 # production
 /build
+MailConfig.ts
 
 # misc
 .DS_Store

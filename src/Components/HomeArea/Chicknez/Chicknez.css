@@ -1,0 +1,11 @@
+.Chicknez > img {
+	border-radius: 100%;
+    width: 50%;
+    border: 2px solid;
+}
+.Chicknez {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+}

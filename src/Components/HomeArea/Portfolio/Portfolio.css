@@ -1,0 +1,90 @@
+.Portfolio {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-style: normal;
+}
+
+.Portfolio h2 {
+  text-align: center;
+}
+
+.projectCard {
+  height: 600px;
+  display: grid;
+  grid-template-rows: 30% 8% 22% 12% 12% 10%;
+  border: 1px solid black;
+  max-width: 350px;
+  max-height: 600px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px 15px 0px 0px;
+  /* border: 1px solid; */
+  max-height: 170px;
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.linksImageContainer {
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.linksImageContainer img {
+  border-radius: 100%;
+  border: 0px;
+}
+
+.descriptionContainer {
+  display: grid;
+  grid-template-columns: 2% auto 2%;
+}
+
+.technologiesContainer {
+  text-align: center;
+}
+
+.compContainer {
+  text-align: center;
+}
+
+.linksContainer {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .Portfolio {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    height: fit-content;
+    width: 90%;
+    /* display: grid; */
+    grid-template-rows: 28% 5% 23% 12% 12% 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 150px;
+  }
+}

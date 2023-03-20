@@ -1,0 +1,48 @@
+.Resume {
+    height:auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.documentContainer {
+  margin-top: 3%;
+}
+
+.documentContainer .react-pdf__Page {
+  width: 100%;
+  box-shadow: 5px 5px 10px;
+  border: 1px solid;
+}
+
+.documentContainer .react-pdf__Page canvas {
+  max-width: 100% !important;
+  height: 5% !important;
+}
+
+.documentContainer .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
+@media screen and (min-width: 1001px) and (max-width:1300px)  {
+  .documentContainer {
+    scale: 1.1;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .documentContainer {
+    scale: 0.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .documentContainer {
+    scale: 0.6;
+  }
+}
+
+

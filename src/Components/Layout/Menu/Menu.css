@@ -1,0 +1,33 @@
+.Menu {
+	height: 100%;
+    display: grid;
+    grid-template-rows: auto 15% 15% 15% 15% auto;
+}
+
+.menuOption{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.menuOption > img {
+    width: 35%;
+}
+
+@media screen and (max-width: 600px) {
+    .Menu{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0% auto auto auto auto 0%;
+    
+    }
+
+    .menuOption {
+        height: 5vh;
+    }
+
+    .menuOption img {
+        width: 25%;
+        height: 75%;
+    }
+}

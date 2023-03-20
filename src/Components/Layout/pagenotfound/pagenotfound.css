@@ -1,0 +1,16 @@
+.pagenotfound {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pagenotfound > img {
+    border: 1px solid;
+    border-radius: 360px;
+}
+
+.pagenotfound > h2 {
+    margin-top: 25px;
+}

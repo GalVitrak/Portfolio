@@ -1,0 +1,19 @@
+.MobileLayout {
+	height: 100%;
+    display: grid;
+    grid-template-rows: 35% auto 5%;
+}
+
+.Layout > footer {
+    width: 100%;
+}
+
+.MobileLayout > main {
+    height: 100%;
+    grid-column: span auto;
+    overflow: auto;
+}
+
+.MobileLayout > header {
+    position: static;
+}
