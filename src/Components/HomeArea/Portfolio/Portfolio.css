@@ -75,7 +75,7 @@
   .projectCard {
     height: fit-content;
     width: 80%;
-    grid-template-rows: 26% 6% 28% 12% 12% 10%;
+    grid-template-rows: 28% 6% 25% 12% 12% 10%;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size:15px;

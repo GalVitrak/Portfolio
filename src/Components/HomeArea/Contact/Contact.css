@@ -1,55 +1,69 @@
 .Contact {
-    height: 100%;
-    display: grid;
-    place-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .formBox {
-    display: inline-block;
-    width: 75%;
-    max-width: 450px;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 450px;
+  margin: 10px;
 }
-input, textarea{
-    padding: 5px;
-    border-radius: 10px;
+
+.ReCaptchaContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+input,
+textarea {
+  padding: 5px;
+  border-radius: 10px;
 }
 
 form {
-    width: 100%;
-    text-align: left;
-  }
-  
-  h2 {
-    text-align: left;
-    margin-bottom: 10%;
-  }
-  
-  form > input,
-  form > button {
-    width: 100%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
-  
-  form > textarea {
-    width: 100%;
-    box-sizing: border-box;
-    height: 100px;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  text-align: left;
+}
 
-  .Error {
-    color: red;
-    margin-left: 25px;
-    position: absolute;
-  }
+h2 {
+  text-align: left;
+  margin-bottom: 10%;
+}
 
-  @media screen and (max-width: 900px) {
-    .formBox {
-      display: inline-block;
-      width: 50%;
-      max-width: 350px;
-      margin: 5%;
+form > input,
+form > button {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+form > textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.Error {
+  color: red;
+  margin-left: 25px;
+  position: absolute;
+}
+
+@media screen and (max-width: 900px) {
+  .formBox {
+    display: inline-block;
+    width: 75%;
+    max-width: 350px;
+    margin: 0%;
+    max-height: 100%;
+    scale: 0.7;
   }
-  }
+}
