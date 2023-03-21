@@ -1,18 +1,20 @@
+/* Desktop */
 .About {
   height: 100%;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .aboutScreen {
-	display: grid;
-  grid-template-columns: 3% 40% 3% auto 3%;  
+  display: grid;
+  grid-template-columns: 2% 50% 2% auto 2%;
   height: 100%;
 }
 
 .mainText {
   display: grid;
-  grid-template-rows: 15% auto auto auto auto 10%;
+  grid-template-rows: 10% 5% auto auto auto auto 10%;
   text-align: left;
 }
 
@@ -29,7 +31,7 @@
 
 .examples {
   display: grid;
-  grid-template-columns: 0% auto 5% auto 0%;
+  grid-template-columns: 0% auto 4% auto 0%;
 }
 
 .side {
@@ -37,9 +39,43 @@
   grid-template-rows: 0% auto 5% auto 0%;
 }
 
+/* //Mobile// */
+@media screen and (max-width: 600px) {
+  .aboutScreenMobile {
+    display: grid;
+    grid-template-columns: 3% auto 5%;
+  }
+
+  .context {
+    display: grid;
+    grid-template-rows: 2% 3% 1% auto 25% auto 32% 5%;
+    height: 100%;
+  }
+
+  .aboutHeader {
+    display: grid;
+    grid-template-columns: auto 2%;
+  }
+
+  .introAndContact {
+    display: grid;
+    grid-template-columns: auto 3% auto 5%;
+  }
+
+  .mainText {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20%;
+  }
+
+  .tech {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 20% 25% 25% 25%;
+  }
+}
 
 /* responsiveness */
-
 @media screen and (min-width: 2001px) {
   .About {
     font-size: 28px;
@@ -48,8 +84,15 @@
     font-size: 40px;
     font-weight: 500;
   }
+
+  .example > .title {
+    font-size: 35px;
   }
-  
+
+  .example > .title > img {
+    width: 25%;
+  }
+}
 
 @media screen and (min-width: 1301px) and (max-width: 2000px) {
   .About {
@@ -59,9 +102,17 @@
     font-size: 30px;
     font-weight: 400;
   }
+
+  .example > .title {
+    font-size: 25px;
   }
-  
-@media screen and (min-width: 901px) and (max-width:1300px)  {
+
+  .example > .title > img {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
   .About {
     font-size: 15px;
   }
@@ -69,19 +120,13 @@
     font-size: 25px;
     font-weight: 400;
   }
-}
 
-@media screen and (max-width:900px) {
-  .mainText {
-    display: grid;
-    grid-template-rows: 2% auto auto auto auto 5%;
-    text-align: left;
+  .example > .title {
+    font-size: 20px;
   }
-  
-  .sideText {
-    display: grid;
-    grid-template-rows: 2% 15% 5% auto 5%;
-    text-align: left;
+
+  .example > .title > img {
+    width: 20%;
   }
 }
 
@@ -93,6 +138,14 @@
     font-size: 15px;
     font-weight: 400;
   }
+
+  .example > .title {
+    font-size: 14px;
+  }
+
+  .example > .title > img {
+    width: 15%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -102,5 +155,13 @@
   .title {
     font-size: 15px;
     font-weight: 400;
+  }
+
+  .example > .title {
+    font-size: 12px;
+  }
+
+  .example > .title > img {
+    width: 10%;
   }
 }

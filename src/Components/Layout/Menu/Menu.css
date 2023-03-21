@@ -23,11 +23,10 @@
     }
 
     .menuOption {
-        height: 5vh;
+        height: 6vh;
     }
 
     .menuOption img {
         width: 25%;
-        height: 75%;
     }
 }

@@ -1,7 +1,7 @@
 .MobileLayout {
 	height: 100%;
     display: grid;
-    grid-template-rows: 35% auto 5%;
+    grid-template-rows: 35% auto 6%;
 }
 
 .Layout > footer {
