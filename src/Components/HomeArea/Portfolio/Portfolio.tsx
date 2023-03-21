@@ -25,7 +25,7 @@ function Portfolio(): JSX.Element {
         </div>
         <div className="technologiesContainer">
           <h4>Technologies</h4>
-          <span>React | Redux | Node.js | Express | MySQL | AWS </span>
+          <span className="techSpan">React | Redux | Node.js | Express | MySQL | AWS </span>
         </div>
         <div className="compContainer">
           <h4>Compatibility</h4>
@@ -70,7 +70,7 @@ function Portfolio(): JSX.Element {
         </div>
         <div className="technologiesContainer">
           <h4>Technologies</h4>
-          <span>Angular | Node.js | Express | MongoDB | AWS </span>
+          <span className="techSpan">Angular | Node.js | Express | MongoDB | AWS </span>
         </div>
         <div className="compContainer">
           <h4>Compatibility</h4>
